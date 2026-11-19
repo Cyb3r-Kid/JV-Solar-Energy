@@ -1,0 +1,34 @@
+[
+  {
+    "fullName": "Anand Vardhan",
+    "companyName": "Vardhan Spinning Mills",
+    "phone": "9840561770",
+    "email": "anand@vardhanspinning.com",
+    "projectType": "Industrial Solar EPC",
+    "projectLocation": "Tirupur, Tamil Nadu",
+    "requiredCapacity": "1.2 MWp",
+    "currentBillRange": "?9,50,000 / month",
+    "additionalRequirements": "Standing-seam industrial roof with 22KV grid evacuation.",
+    "source": "JV Solar Website Quote Form",
+    "id": "MTc5NTA5NjMyNjkyOS0xOTU4",
+    "enquiryId": "JVS-20261119-1958",
+    "createdAt": "2026-11-19T13:52:06.929Z",
+    "status": "PENDING"
+  },
+  {
+    "fullName": "Senthil Nathan",
+    "companyName": "Titan Precision Components",
+    "phone": "9840571770",
+    "email": "senthil@titanprecision.co.in",
+    "projectType": "Industrial Solar EPC",
+    "projectLocation": "Hosur, Tamil Nadu",
+    "requiredCapacity": "500 KWp",
+    "currentBillRange": "?4,50,000 / month",
+    "additionalRequirements": "Trapezoidal metal sheet rooftop, 11KV dedicated feeder.",
+    "source": "JV Solar Website Quote Form",
+    "id": "MTc5NTA5NTEyNzM0Ny05NDM0",
+    "enquiryId": "JVS-20261119-9434",
+    "createdAt": "2026-11-19T13:32:07.347Z",
+    "status": "PENDING"
+  }
+]

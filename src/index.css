@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-emerald: #087F5B;
+    --forest-green: #173D2B;
+    --deep-forest: #0C261D;
+    --dark-green: #12382A;
+
+    --natural-sage: #DCE8D9;
+    --warm-ivory: #F8F7F0;
+    --soft-white: #FFFFFF;
+    --light-beige: #EEEBDD;
+
+    --champagne-gold: #C9A96A;
+    --solar-gold: #E6B94F;
+
+    --text-primary: #202923;
+    --text-body: #46534B;
+    --text-secondary: #65736A;
+
+    --text-on-dark: #FFFFFF;
+    --text-on-dark-secondary: #E1EAE3;
+
+    /* Tailwind color aliases */
+    --color-emerald: #087F5B;
+    --color-forest: #173D2B;
+    --color-deep-forest: #0C261D;
+    --color-dark-green: #12382A;
+    --color-sage: #DCE8D9;
+    --color-ivory: #F8F7F0;
+    --color-white: #FFFFFF;
+    --color-beige: #EEEBDD;
+    --color-gold: #C9A96A;
+    --color-dark-text: #202923;
+    --color-secondary-text: #65736A;
+  }
+
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    overflow-x: hidden;
+    color: var(--text-primary);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.015em;
+  }
+}
+
+/* SOLID NAVBAR SPECIFICATION — ZERO TRANSPARENCY ACROSS ALL STATES */
+.site-navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: #FFFFFF !important;
+  opacity: 1 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: 1px solid rgba(23, 61, 43, 0.10);
+  box-shadow: 0 2px 12px rgba(12, 38, 29, 0.06);
+}
+
+.dark .site-navbar {
+  background-color: #FFFFFF !important;
+  border-bottom: 1px solid rgba(23, 61, 43, 0.10);
+  box-shadow: 0 2px 12px rgba(12, 38, 29, 0.06);
+}
+
+/* Surface Utility Classes for Explicit Contrast */
+.surface-white {
+  background-color: #FFFFFF;
+  color: #202923;
+}
+.surface-white h1, .surface-white h2, .surface-white h3, .surface-white h4 {
+  color: #202923;
+}
+.surface-white p {
+  color: #46534B;
+}
+
+.surface-ivory {
+  background-color: #F8F7F0;
+  color: #202923;
+}
+.surface-ivory h1, .surface-ivory h2, .surface-ivory h3, .surface-ivory h4 {
+  color: #202923;
+}
+.surface-ivory p {
+  color: #46534B;
+}
+
+.surface-sage {
+  background-color: #DCE8D9;
+  color: #173D2B;
+}
+.surface-sage h1, .surface-sage h2, .surface-sage h3, .surface-sage h4 {
+  color: #173D2B;
+}
+.surface-sage p {
+  color: #294D3B;
+}
+
+.surface-beige {
+  background-color: #EEEBDD;
+  color: #202923;
+}
+.surface-beige h1, .surface-beige h2, .surface-beige h3, .surface-beige h4 {
+  color: #202923;
+}
+.surface-beige p {
+  color: #46534B;
+}
+
+.surface-forest {
+  background-color: #173D2B;
+  color: #FFFFFF;
+}
+.surface-forest h1, .surface-forest h2, .surface-forest h3, .surface-forest h4 {
+  color: #FFFFFF;
+}
+.surface-forest p {
+  color: #E1EAE3;
+}
+
+.surface-deep-forest {
+  background-color: #0C261D;
+  color: #FFFFFF;
+}
+.surface-deep-forest h1, .surface-deep-forest h2, .surface-deep-forest h3, .surface-deep-forest h4 {
+  color: #FFFFFF;
+}
+.surface-deep-forest p {
+  color: #E1EAE3;
+}
+
+.surface-emerald {
+  background-color: #087F5B;
+  color: #FFFFFF;
+}
+.surface-emerald h1, .surface-emerald h2, .surface-emerald h3, .surface-emerald h4 {
+  color: #FFFFFF;
+}
+.surface-emerald p {
+  color: #F5FAF7;
+}
+
+/* Fluid responsive typography utilities */
+.hero-headline {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  line-height: 1.10;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+  max-width: 760px;
+}
+
+.page-hero-headline {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 4vw + 0.5rem, 3.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  max-width: 720px;
+}
+
+.section-headline {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.8rem, 3.5vw, 3.2rem);
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+}
+
+/* Hero description width constraint */
+.hero-desc {
+  max-width: 580px;
+  line-height: 1.7;
+}
+
+/* Clean, restrained scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F7F0;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0C261D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #173D2B;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #087F5B;
+}
